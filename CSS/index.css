@@ -1,0 +1,21 @@
+body{
+  background-image: url("../Assets/AmEZc.jpg");
+  background-position: center;
+
+
+}
+.headerLogo{
+  display: flex;
+  justify-content: center;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  color: blue;
+  
+}
+.hero{
+  display: flex;
+  justify-content: center;
+
+}
