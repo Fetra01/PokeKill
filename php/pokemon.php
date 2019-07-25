@@ -1,13 +1,16 @@
 <?php
   class pokemon{
-    private  STRING $namePokemon;
-    private  INT $vie;
-    private  INT $force;
-    private   $attack  = array('nameAttack' => 'damage');
+    private   $namePokemon;
+    private   $health;
+    private   $strength;
+    private   $attack;
 
-    public function __construct($nom)
+    public function __construct(string $nom,int $life,int $power,array $kick)
     {
       $this -> namePokemon = $nom;
+      $this -> health = $life;
+      $this -> strength = $power;
+      $this -> attack = $kick;
     }
 
     public function getNamePok()
