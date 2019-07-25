@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+    		<meta charset="UTF-8">
+    		<meta name="language" content="fr">
+		<link rel="stylesheet" type="text/css" href="CSS/menu.css">
+    		<title>Pokekill</title>
+	</head>
+	<body>
+		<header class="logoheader">
+			<img class="logoForm" src="Assets/logo.png">
+		</header>
+		<div class="textmid">
+			<p>Bienvenu à toi $name, j'espère pour toi que tu es préparer à réaliser ta destiné...</p>
+			<p>Il est temps pour toi de choisir, réfléchit vite mais réfléchit bien cela derterminera ton futur</p>
+			<p><button type="button" id="choixpokemon" class="choixpokemoncss">Choix</button>
+				<button type="button" id="sauvegarde">Sauvegarde</button>
+				<button>Démarrer Partie</button>
+				<button>Inventaire</button>
+				<div id="modalsauvegarde" class="modal1">
+						<div class="modalcontent">
+							<span id="closed" class="close"></span>
+							<p>on est dans l'inventaire ici</p>
+						</div>
+				</div>
+
+			</p>
+		</div>
+		<div id="modalcarousel" class="modal">
+  		<div class="modalcontent">
+    		<span id="close"></span>
+    		<div id="headermagasin">
+    		<p>Quelle sera ton choix<br> jeune dresseur ?</p>
+    		</div>
+				<button id="suivant">Suivant</button>
+				<ul id="carousel">
+					<li class="active"><input type="image"  class="imagecarousel" src="https://img.pokemondb.net/sprites/ruby-sapphire/normal/charmander.png" alt="Charmander"></li>
+					<li><input type="image" class="imagecarousel" src="https://img.pokemondb.net/sprites/diamond-pearl/normal/lickitung.png" alt="Lickitung"></li>
+					<li><input type ="image" class="imagecarousel" src="https://img.pokemondb.net/sprites/ruby-sapphire/normal/abra.png" alt="Abra"></li>
+					<li><input type="image" class="imagecarousel" src="https://img.pokemondb.net/sprites/black-white/normal/psyduck.png" alt="Psyduck"></li>
+				</ul>
+  		</div>
+		</div>
+
+
+
+		<script type="text/javascript" src="JS/scriptcarousel.js"></script>
+	</body>
+
+</html>
