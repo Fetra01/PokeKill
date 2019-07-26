@@ -1,45 +1,52 @@
 <?php
-  class pokemon{
-    private   $namePokemon;
-    private   $health;
-    private   $strength;
-    private   $attack;
+  class Pokemon{
+    public  $namePokemon;
+    public   $health;
+    public   $strength;
+    public   $attack  = array('nameAttack' => 'damage');
 
-    public function __construct(string $nom,int $life,int $power,array $kick)
+   public function __construct()
     {
-      $this -> namePokemon = $nom;
-      $this -> health = $life;
-      $this -> strength = $power;
-      $this -> attack = $kick;
+      //$this->namePokemon = $name;
     }
 
     public function getNamePok()
     {
-      return $this -> namePokemon;
+      return $this ->namePokemon;
     }
-    public function setNamePok(string $nompok)
+    public function setNamePok($name)
     {
-      $this -> namePokemon = $nompok
+      $this ->namePokemon = $name;
     }
 
     // Vie du Pokemon
 
     public function getVie()
     {
-      return $this -> vie;
+      return $this ->health;
+    }
+    public function setVie($Health){
+      $this->health=$Health;
     }
 
     // Force du pokemon
     public function getForce()
     {
-      return $this -> force;
+      return $this ->strength;
     }
 
+    public function setForce($Strength){
+      $this->strength=$Strength;
+    }
     // Attaque du Pokemon
 
     public function getAttack()
     {
-      return $this -> attack;
+      return $this ->attack;
+    }
+
+    public function setAttack($attack){
+      $this->Attack=$attack;
     }
   }
 ?>
