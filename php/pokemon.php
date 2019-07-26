@@ -5,11 +5,13 @@
     public   $strength;
     public   $attack  = array('nameAttack' => 'damage');
 
+
    public function __construct($name,$health,$strength)
     {
       $this->namePokemon = $name;
       $this->health = $health;
       $this->strength = $strength;
+
     }
 
     public function getNamePok()
