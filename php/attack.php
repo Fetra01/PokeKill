@@ -1,32 +1,35 @@
 <?php
-class attack{
 
-    private string $nameAttack;
-    private int $damage;
 
-    public function__construct(string $attack int $bobo){
-      $this->$nameAttack=$attack;
-      $this->$damage=$bobo;
-    }
+class Attack{
+
+    public $nameAttack;
+    public $damage;
+
+  public function __construct(string $attack, int $lose){
+    $this->nameAttack=$attack;
+    $this ->damage = $lose;
+  }
 //name for attack string
 
     public function getNameAttack(){
       return $this->nameAttack;
     }
 
-    public function setNameAttack(string $attack){
-      $this->nameAttack=$attack;
+    public function setNameAttack($attack){
+      $this->nameAttack= $attack;
     }
 
 //damege integer
 
     public function getDamage(){
-      return $this->damage;
+      return $this-> $damage;
     }
 
-    public function setDamage(int $number){
-      $this->damage=$number;
+    public function setDamage($number){
+      $this->damage= $number;
     }
+
 
 }
 ?>

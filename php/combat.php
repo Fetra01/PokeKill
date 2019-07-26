@@ -1,21 +1,13 @@
 <?php
-    /**
-     *
-     */
-    class combat{
+      class combat{
 
-      private string  $pokemon1;
-      private string  $pokemon2;
-      private string  $nameAttack;
-      private int  $damage;
+      private  $pokemon1;
+      private  $pokemon2;
 
-
-      function __construct($attaquant,$victim,$attack,$bobo)
+      function __construct($attaquant,$victim)
       {
         $this->pokemon1=$attaquant;
         $this->pokemon2=$victim;
-        $this->nameAttack=$attack;
-        $this->damage=$bobo;
       }
 
       public function getPokemon1(){
@@ -50,6 +42,28 @@
         $this->damage=$bobo;
       }
 
-    }
+      public function gainxp($xp){
+          $this->xp=$xp+1;
+          return $xp;
+      }
 
+      public function hit(Attack $attack,$victim)
+      {
+
+        $victim->health -= $this->damages;
+        $this->gainXp();
+        return $xp ;
+        return $health;
+
+      }
+
+      public function die($health,$damage){
+        if($this->$health <= 0){
+          echo $this->victim ."died!!" ;
+        }else{
+          $health=$health-$damage;
+          return $health;
+      }
+    }
+  }
 ?>
