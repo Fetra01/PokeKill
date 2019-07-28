@@ -1,10 +1,12 @@
 <?php
 
 
-class attack{
+
+class Attack{
 
     public $nameAttack;
     public $damage;
+
 
   public function __construct(string $attack, int $lose){
     $this->nameAttack=$attack;
@@ -23,12 +25,15 @@ class attack{
 //damege integer
 
     public function getDamage(){
-      return $this-> damage;
+
+      return $this-> $damage;
+
     }
 
     public function setDamage($number){
       $this->damage= $number;
     }
+
 
 }
 ?>
